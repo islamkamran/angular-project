@@ -1,0 +1,65 @@
+<div class="signup-container">
+  <h2>Create UAE PASS Account</h2>
+  <form (submit)="signup()" class="signup-form">
+    <div class="form-group">
+      <input
+        type="text"
+        name="firstname"
+        [(ngModel)]="user.firstname"
+        placeholder="First Name"
+        class="form-input"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        name="lastname"
+        [(ngModel)]="user.lastname"
+        placeholder="Last Name"
+        class="form-input"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="user.email"
+        placeholder="Email"
+        class="form-input"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="tel"
+        name="phonenumber"
+        [(ngModel)]="user.phonenumber"
+        placeholder="Phone Number (e.g. 97160000000)"
+        class="form-input"
+      />
+    </div>
+    <div class="form-group">
+      <select
+        name="role"
+        [(ngModel)]="user.role"
+        class="form-input select-input"
+      >
+        <option value="" disabled selected>Select Role</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+        <option value="manager">Manager</option>
+      </select>
+    </div>
+
+    <div class="remember-me">
+      <input type="checkbox" id="remember" name="remember" />
+      <label for="remember">Remember me</label>
+    </div>
+
+    <button type="submit" class="submit-btn">Sign Up</button>
+
+    <div class="form-footer">
+      <p>Already have an account? <a href="/signin">Sign In</a></p>
+      <a href="/recover" class="recover-link">Recover your account</a>
+    </div>
+  </form>
+</div>

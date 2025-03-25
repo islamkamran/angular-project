@@ -1,0 +1,106 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://www.damacliving.com/_next/static/media/login-bg.73b46454.jpg")
+    no-repeat center center/cover;
+}
+
+.login-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 380px;
+  margin-right: -1250px;
+  margin-top: 100px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+  align-self: start;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  align-self: start;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+
+  &:focus {
+    border-color: #c9a66b;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(201, 166, 107, 0.2);
+  }
+}
+
+.centered-placeholder {
+  text-align: center;
+
+  &::placeholder {
+    color: #999;
+    text-align: left;
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  background: #c9a66b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background: #b38e54;
+  }
+}
+
+.form-footer {
+  margin-top: 20px;
+  font-size: 14px;
+
+  p {
+    color: #666;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #c9a66b;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
