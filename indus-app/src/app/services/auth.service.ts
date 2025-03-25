@@ -19,4 +19,8 @@ export class AuthService {
   signin(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/user/signin-uid`, data);
   }
+
+  dashboard(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/user/dashboard`);
+  }
 }
